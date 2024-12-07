@@ -1,0 +1,61 @@
+{
+  "name": "vscode-settings-sync",
+  "displayName": "VS Code Settings Sync",
+  "description": "Sync VS Code settings and extensions using GitHub",
+  "version": "0.0.1",
+  "publisher": "vscode-sync",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:vscode-settings-sync.sync",
+    "onCommand:vscode-settings-sync.configure",
+    "*"
+  ],
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": true
+    },
+    "virtualWorkspaces": true
+  },
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vscode-settings-sync.sync",
+        "title": "Sync Settings and Extensions"
+      },
+      {
+        "command": "vscode-settings-sync.configure",
+        "title": "Configure GitHub Sync"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "node ./test/runTest.js"
+  },
+  "dependencies": {
+    "@octokit/rest": "^19.0.7",
+    "@vscode/vsce": "^2.15.0"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.74.0",
+    "@types/glob": "^8.0.0",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "eslint": "^8.28.0",
+    "glob": "^8.0.3",
+    "mocha": "^10.1.0",
+    "typescript": "^4.9.3",
+    "@vscode/test-electron": "^2.2.0"
+  },
+  "permissions": [
+    "workbench.extensions"
+  ],
+  "extensionKind": ["ui", "workspace"]
+}
