@@ -50,7 +50,7 @@ This extension contributes the following commands:
 
 - Initial sync may take some time depending on the number of extensions
 - Some extension settings might require manual configuration
-- It doesn't install anything and just shows a message "All extensions are already installed!"
+- It doesn't install anything and just shows a message "All extensions are already installed!" (Help me fix this ASAP)
 
 ## Release Notes
 
