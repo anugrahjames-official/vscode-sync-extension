@@ -1,4 +1,4 @@
-# VS Code Settings Sync
+# VS Code Settings Sync (Discontinued)
 
 A VS Code extension that helps you sync your VS Code settings and extensions using GitHub Gists.
 
