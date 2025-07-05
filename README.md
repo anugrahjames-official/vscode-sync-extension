@@ -1,5 +1,7 @@
 # VS Code Settings Sync (Discontinued)
 
+This extension is no longer maintained as I coudn't figure it out and I found something else working fine. 
+
 A VS Code extension that helps you sync your VS Code settings and extensions using GitHub Gists.
 
 ## Features
